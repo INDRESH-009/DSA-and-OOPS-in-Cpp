@@ -5,6 +5,8 @@
 -For loop
 -nested loop
 -for each loop
+-break statement in loops [for and while]
+-continue statement in loops [for and while]
 */
 
 #include <iostream>
