@@ -4,7 +4,7 @@
 #include <iostream>
 using namespace std;
 int main(){
-    cout << "Learning OOPs in C++ \a";
+    cout << "Learning OOPs in C++";
     
 }
 
@@ -51,9 +51,18 @@ int main(){
 
 // The operator << is called the insertion or put to operator. It directs the contents of the variable on its right to the object on its left
 //In the statement --- cout << "hello"; ---- the insertion operator sends the variable constant "hello" to the cout object which streams the data on the screen
-
 // In C, you’ll recognize << as the left-shift bit-wise operator and wonder how it can also be used to direct output. In C++, operators can be overloaded. That is, they can perform different activities, depending on the context.This is called operator overloading 
 
+//--------------------------------------STRING CONSTANTS --------------------------------------------------
+
+//The phrase " Learning OOPS in c++" is a string constant.
+//Constants cant be changed during the course of the program . Its value is set only once and retains it throughtout the programs existance
+//The situation regarding strings is complicated in C++ . It can be represented in 2 ways
+    // 1. Array of characters  
+    // 2. Object of the class
+
+
+//--------------------------------------DIRECTIVES - PREPROCESSOR AND USING DIRECTIVES----------------------------
 
 
 
