@@ -1,3 +1,12 @@
+//TOPICS COVERED
+/*
+-Booleans in c++
+-if-else statements 
+-if-else if-else statements 
+-Terenary operator
+-switch statements 
+*/
+
 //C++ Booleans
 // Very often, in programming, you will need a data type that can only have one of two values, like:
 
@@ -119,3 +128,10 @@ int main(){
     cout<<"wrong month"<<endl;
     }
 }
+    //break statements - 
+    //When C++ reaches a break keyword, it breaks out of the switch block.
+    //This will stop the execution of more code and case testing inside the block.
+    //When a match is found, and the job is done, it's time for a break. There is no need for more testing.
+    //A break can save a lot of execution time because it "ignores" the execution of all the rest of the code in the switch block.
+
+    //default statements - The default keyword specifies some code to run if there is no case match:
