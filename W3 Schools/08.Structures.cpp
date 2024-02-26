@@ -74,6 +74,8 @@ int main(){
     cout<<car2.carbrand<<' '<<car2.model<<" used for "<<car2.yearsUsed<<" years"<<endl;
     cout<<car3.carbrand<<' '<<car3.model<<" used for "<<car3.yearsUsed<<" years"<<endl;
 
+
+
     //Named structure
     //If you have the strucure name right after the struct keyword then it is a named structure 
     //Each named structure can be considered as a own datatype. This means you can create variables in this structure throughout the program and is always placed before the main function 

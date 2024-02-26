@@ -1,3 +1,12 @@
+//Topics covered 
+/*
+-Basic C++ program structure 
+-Output statement
+-line break and newline
+-comments 
+*/
+
+
 #include <iostream> //headerfile that has I/O objects like cin and cout
 using namespace std; //means that we can use names for objects and variables from the standard library.
 int main(){ //main function

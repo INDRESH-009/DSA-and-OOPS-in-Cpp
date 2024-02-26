@@ -84,97 +84,114 @@ int main(){
     sum = numa + numb;
     cout << "The sum is " << sum <<endl;
 
-//DATA TYPES IN C++
+    //DATA TYPES IN C++
 
 
-// Data Type	Size	        Description
-// boolean	    1 byte	        Stores true or false values
-// char	        1 byte	        Stores a single character/letter/number, or ASCII values
-// int	        2 or 4 bytes	Stores whole numbers, without decimals
-// float	    4 bytes	        Stores fractional numbers, containing one or more decimals(6-7 decimal digits)
-// double	    8 bytes	        Stores fractional numbers, containing one or more decimals(15 decimal digits)
+    // Data Type	Size	        Description
+    // boolean	    1 byte	        Stores true or false values
+    // char	        1 byte	        Stores a single character/letter/number, or ASCII values
+    // int	        2 or 4 bytes	Stores whole numbers, without decimals
+    // float	    4 bytes	        Stores fractional numbers, containing one or more decimals(6-7 decimal digits)
+    // double	    8 bytes	        Stores fractional numbers, containing one or more decimals(15 decimal digits)
 
 
-//numeric datatype
-int integer = 100;
-float decimal1 = 12.78;
-double decimal2 = 23.89;
-// float vs double
+    //numeric datatype
+    int integer = 100;
+    float decimal1 = 12.78;
+    double decimal2 = 23.89;
+    // float vs double
 
-// The precision of a floating point value indicates how many digits the value can have after the decimal point. The precision of float is only six or seven decimal digits, while double variables have a precision of about 15 digits. Therefore it is safer to use double for most calculations.
+    // The precision of a floating point value indicates how many digits the value can have after the decimal point. The precision of float is only six or seven decimal digits, while double variables have a precision of about 15 digits. Therefore it is safer to use double for most calculations.
 
-cout<<"for scientific calculations we use e/E to idicate the power of 10"<<endl;
-float f1 = 35e3;
-double d1 = 12E4;
-cout<<f1<<endl<<d1<<endl;
+    cout<<"for scientific calculations we use e/E to idicate the power of 10"<<endl;
+    float f1 = 35e3;
+    double d1 = 12E4;
+    cout<<f1<<endl<<d1<<endl;
 
-//Boolean datatype - value is true or false - a true case has a value 1 and false case has a value 0 - mostly used in conditional testing
-bool isCodingFun = true;
-bool isSnacksGood = false;
-cout<<isCodingFun<<endl;    //output is 1 
-cout<<isSnacksGood<<endl;   //output is 0
+    //Boolean datatype - value is true or false - a true case has a value 1 and false case has a value 0 - mostly used in conditional testing
+    bool isCodingFun = true;
+    bool isSnacksGood = false;
+    cout<<isCodingFun<<endl;    //output is 1 
+    cout<<isSnacksGood<<endl;   //output is 0
 
-//Character datatype
-//This datatype is used to store single character and is surrounded by quotes - only single quotes ' '
-char letter1 = 'A';
-cout<<letter1<<endl;
-//We can also assign the ascii value of the letter to char variable and get the character it maps 
-char A = 65;
-cout<<A<<endl;
-char B = 66;
-cout<<B<<endl;
+    //Character datatype
+    //This datatype is used to store single character and is surrounded by quotes - only single quotes ' '
+    char letter1 = 'A';
+    cout<<letter1<<endl;
+    //We can also assign the ascii value of the letter to char variable and get the character it maps 
+    char A = 65;
+    cout<<A<<endl;
+    char B = 66;
+    cout<<B<<endl;
 
-//String datatype
-//It is  type that helps to store sequence of characters , it is not a builtin datatype but it behaves as a basic usage in C++ . It is always surrounded by double quotes " ". 
-//To use strings in your code you should include an additional headerfile called #include <string>
+    //String datatype
+    //It is  type that helps to store sequence of characters , it is not a builtin datatype but it behaves as a basic usage in C++ . It is always surrounded by double quotes " ". 
+    //To use strings in your code you should include an additional headerfile called #include <string>
 
-string sentence = "Hello I am learning C++";
-cout<<sentence<<endl;
-
-
-
-//OPERATORS IN C++
-
-//1.ARITHEMATIC OPERATORS
-
-// Operator	Name	    Description	                                    Example
-// +	Addition	    Adds together two values	                    x + y	
-// -	Subtraction	    Subtracts one value from another	            x - y	
-// *	Multiplication	Multiplies two values	                        x * y	
-// /	Division	    Divides one value by another	                x / y	
-// %	Modulus	        Returns the division remainder	                x % y	
-// ++	Increment	    Increases the value of a variable by 1	        ++x	
-// --	Decrement	    Decreases the value of a variable by 1	        --x
-
-int number1 , number2; 
-cout<<"enter number 1"<<endl;
-cin>>number1;
-cout<<"enter number 2"<<endl;
-cin>>number2;
-
-cout<<number1+number2<<endl;    //addition
-cout<<number1-number2<<endl;    //substraction
-cout<<number1*number2<<endl;    //multiplication
-cout<<number1/number2<<endl;    //division
-cout<<number1%number2<<endl;    //modulus
-cout<<++number1<<endl;          //pre increment
-cout<<--number1<<endl;          //pre decrement
-cout<<number1++<<endl;          //post increment
-cout<<number1--<<endl;          //post decrement
+    string sentence = "Hello I am learning C++";
+    cout<<sentence<<endl;
 
 
-//2.ASSIGNMENT OPERATORS
-// Operator 	Example	        Same As	
-// =	        x = 5	        x = 5	
-// +=	        x += 3	        x = x + 3	
-// -=	        x -= 3	        x = x - 3	
-// *=	        x *= 3	        x = x * 3	
-// /=	        x /= 3	        x = x / 3	
-// %=	        x %= 3	        x = x % 3	
-// &=	        x &= 3	        x = x & 3	
-// |=	        x |= 3	        x = x | 3	
-// ^=	        x ^= 3	        x = x ^ 3	
-// >>=	        x >>= 3	        x = x >> 3	
-// <<=	        x <<= 3	        x = x << 3
+
+    //OPERATORS IN C++
+
+    //1.ARITHEMATIC OPERATORS
+
+    // Operator	Name	    Description	                                    Example
+    // +	Addition	    Adds together two values	                    x + y	
+    // -	Subtraction	    Subtracts one value from another	            x - y	
+    // *	Multiplication	Multiplies two values	                        x * y	
+    // /	Division	    Divides one value by another	                x / y	
+    // %	Modulus	        Returns the division remainder	                x % y	
+    // ++	Increment	    Increases the value of a variable by 1	        ++x	
+    // --	Decrement	    Decreases the value of a variable by 1	        --x
+
+    int number1 , number2; 
+    cout<<"enter number 1"<<endl;
+    cin>>number1;
+    cout<<"enter number 2"<<endl;
+    cin>>number2;
+
+    cout<<number1+number2<<endl;    //addition
+    cout<<number1-number2<<endl;    //substraction
+    cout<<number1*number2<<endl;    //multiplication
+    cout<<number1/number2<<endl;    //division
+    cout<<number1%number2<<endl;    //modulus
+    cout<<++number1<<endl;          //pre increment - outputs a number greater
+    cout<<--number1<<endl;          //pre decrement - outputs a number lesser 
+    cout<<number1++<<endl;          //post increment - outputs same number,only in loops where its called next it increases
+    cout<<number1--<<endl;          //post decrement - outputs same number,only in loops where its called next it decreases
+
+
+    //2.ASSIGNMENT OPERATORS
+    // Operator 	Example	        Same As	
+    // =	        x = 5	        x = 5	
+    // +=	        x += 3	        x = x + 3	
+    // -=	        x -= 3	        x = x - 3	
+    // *=	        x *= 3	        x = x * 3	
+    // /=	        x /= 3	        x = x / 3	
+    // %=	        x %= 3	        x = x % 3	
+    // &=	        x &= 3	        x = x & 3	
+    // |=	        x |= 3	        x = x | 3	
+    // ^=	        x ^= 3	        x = x ^ 3	
+    // >>=	        x >>= 3	        x = x >> 3	
+    // <<=	        x <<= 3	        x = x << 3
+
+
+
+    //3.COMPARISION OPERATORS
+    // Operator	Name	                    Example	
+    // ==	Equal to	                    x == y	
+    // !=	Not equal	                    x != y	
+    // >	Greater than	                x > y	
+    // <	Less than	                    x < y	
+    // >=	Greater than or equal to	    x >= y	
+    // <=	Less than or equal to	        x <= y
+
+    //4.LOGICAL OPERATOR 
+    //     Operator	Name	Description	                                                Example	
+    // && 	Logical and	    Returns true if both statements are true	                x < 5 &&  x < 10	
+    // || 	Logical or	    Returns true if one of the statements is true	            x < 5 || x < 4	
+    // !	Logical not	    Reverse the result, returns false if the result is true	    !(x < 5 && x < 10)
 
 }

@@ -8,6 +8,7 @@
 -Looping through an array
 -Using for-each loop to loop through an array
 -Get the size of the array
+-Multidimensional arrays
 
 */
 #include <iostream>
@@ -77,10 +78,15 @@ int main(){
 
     int numarr[] = {1,2,3,4,5};
     cout<<sizeof(numarr)<<endl;
-    //Here we get output as 20 but we have only 5 numbers , Why? -> because the sizeof operator gives the size of the array in bits , so here we have 5 elements and the datatype int occupies 4 bits , so 5x4=20 bits . therefore if we want to find the numberof elements in a array divide the total no.of bits by the size of the datatype of the array
+    //Here we get output as 20 but we have only 5 numbers , Why? -> because the sizeof operator gives the size of the array in bits , so here we have 5 elements and the datatype int occupies 4 bits , so 5x4=20 bits . therefore if we want to find the number of elements in a array divide the total no.of bits by the size of the datatype of the array
 
     int lengthOfArr = sizeof(numarr)/sizeof(int);
-    cout<<lengthOfArr<<"is the length of the array"<<endl;
+    cout<<lengthOfArr<<" is the length of the array"<<endl;
+    //we can also use the for-each loop to loop through an array without knowing its size as the compiler knows it
+
+
+    //MULTIDIMENTIONAL ARRAYS
+    
 
 
 
