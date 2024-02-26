@@ -25,13 +25,41 @@ class myClass{          //The class
     int myNum;          //Attribute(int variable)
     string myString;    //Attribute(string variable)
 };
+
+//Defining a class to create multiple objects 
+class car{
+    public:
+    string brand;
+    string model;
+    int year;
+};
 int main(){
     //We have created a class , now we can create a object using the class as a blueprint and access its variables members using . syntax
-    myClass obj1;
+    myClass obj1;           //object created 
+    //Giving value to variables if this object 
     obj1.myNum = 123;
     obj1.myString = "My first class-object in C++";
-
+    //printing the object 
     cout<<obj1.myNum<<endl;
     cout<<obj1.myString<<endl;
+
+
+    //CREATING MULTIPLE OBJECTS OF THE CAR CLASS
+    car car1;
+    car1.brand = "Suzuki";
+    car1.model = "Ignis";
+    car1.year = 2020;
+
+    car car2;
+    car2.brand = "BMW";
+    car2.model = "7 series";
+    car2.year = 2030;
+
+    car car3;
+    car3.brand = "Rolls Royce";
+    car3.model = "Ghost";
+    car3.year = 2040;
+
+    cout<<car1.brand<<car1.model<<car1.year<<endl;
 
 }
