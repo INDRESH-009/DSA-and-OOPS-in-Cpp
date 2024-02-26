@@ -11,6 +11,12 @@ To define a function outside the class definition, you have to declare it inside
 
 
 */
+
+
+/* - Remove comment later while solvinng this error
+
+
+
 #include <iostream>
 #include <string>
 using namespace std;
@@ -40,3 +46,4 @@ int main(){
     obj1.present("20");   //function called and parameter passed
     return 0;
 }
+*/
