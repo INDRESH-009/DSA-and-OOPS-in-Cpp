@@ -321,7 +321,7 @@ int main(){
     int given_num;
     cout<<"Enter any number : ";
     cin>>given_num;
-    float half = float(given_num)/2;
+    float half = float(given_num)/2;    //converting int to float to get decimal (3/2 = 1.5 is half)
     cout<<"The half of the given number is : "<<half<<endl;
 
 
