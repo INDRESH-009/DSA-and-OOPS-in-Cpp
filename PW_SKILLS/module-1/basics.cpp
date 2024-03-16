@@ -8,8 +8,9 @@
         7.User input - cin 
         8.Relational operators , assignment operators 
         9.char datatype , ASCII values , typecasting
-
- */
+        10.Hirarchey of operators
+*/
+ 
 
 #include <iostream>
 #include <math.h>
@@ -323,6 +324,96 @@ int main(){
     cin>>given_num;
     float half = float(given_num)/2;    //converting int to float to get decimal (3/2 = 1.5 is half)
     cout<<"The half of the given number is : "<<half<<endl;
+
+    //QUESTION - take a float input and print the fractional part of the real number 
+    /* 
+                Explanation : for any given number , we have to give the fractional part of it
+                for 1.3 => 0.3      (1.3-1.0 = 0.3)
+                for 9.7 => 0.7      (9.7-9.0 = 0.7)
+                for -1.3 => 0.7     (-1.3-(-2) = 0.7)
+                for -9.7 => 0.3     (-9.7-(-10) = 0.3)
+
+                Note - for any numbers the given number is subtracted from the next lesser number
+     */
+    float realnum;                                                          //declared
+    cout<<"Enter any real number : ";                                       //asking input
+    cin>>realnum;                                                           //taking input
+    int nearest_least_number = (int)realnum;                                //typecasting realnum to int
+    if(nearest_least_number<0){                                             //if the typecasted number is 
+        nearest_least_number = nearest_least_number - 1;                    //negative then add -1 to it
+    }
+    
+    float fractional_part = realnum - nearest_least_number;                 //find fractional part
+    cout<<"The fractional part is :  "<<fractional_part<<endl;              //print result
+
+//======================================== LECTURE - 10 =========================================
+                /*
+        Operator                             Category
+        ------------------------------------------------------------------------------
+        ::                                  Scope resolution
+        -----------------------------------------------------------------------------
+        () [] -> .                           Function call, Array subscripting, Member selection via object pointer, Member selection via object reference
+        -----------------------------------------------------------------------------
+        ++ --                               Postfix increment/decrement
+        -----------------------------------------------------------------------------
+        ++ -- + - * ! ~ sizeof              Prefix increment/decrement, Unary plus/minus, Dereference, Logical NOT, Bitwise NOT, Size of
+        -----------------------------------------------------------------------------
+        * / %                               Multiplication, Division, Modulus
+        -----------------------------------------------------------------------------
+        + -                                 Addition, Subtraction
+        -----------------------------------------------------------------------------
+        << >>                               Bitwise left shift, Bitwise right shift
+        -----------------------------------------------------------------------------
+        < <= > >=                           Relational less than, Relational less than or equal to, Relational greater than, Relational greater than or equal to
+        -----------------------------------------------------------------------------
+        == !=                               Relational equal to, Relational not equal to
+        -----------------------------------------------------------------------------
+        &                                   Bitwise AND
+        -----------------------------------------------------------------------------
+        ^                                   Bitwise XOR
+        -----------------------------------------------------------------------------
+        |                                   Bitwise OR
+        -----------------------------------------------------------------------------
+        &&                                  Logical AND
+        -----------------------------------------------------------------------------
+        ||                                  Logical OR
+        -----------------------------------------------------------------------------
+        ?:                                  Ternary conditional
+        -----------------------------------------------------------------------------
+        = += -= *= /= %= <<= >>= &= ^= |=   Assignment, Assignment by sum, Assignment by difference, Assignment by product, Assignment by quotient, Assignment by remainder, Assignment by left shift, Assignment by right shift, Assignment by bitwise AND, Assignment by bitwise XOR, Assignment by bitwise OR
+        -----------------------------------------------------------------------------
+        ,                                   Comma
+        -------------------------------------------------------------------------
+
+        DIRECTION OF SOLVING 
+
+        Right to Left Associativity: =, +=, -=, *=, /=, %=, <<=, >>=, &=, ^=, |=
+        Left to Right Associativity: +, -, *, /, %, <<, >>, &, ^,
+
+        */
+
+    int add = 2*3/4+4/4+8-2+5/8;  //mul and div have same priority so move from left to right. div yields only int bcz add is a int datatype . so 6/4 = 1.5 = 1;
+    //      6 /4+1 +8-2+0
+    //      1+1+8-2
+    //      +8 is the ans
+    cout<<add<<endl;
+
+    //QUESTION - Find the result of the following code 
+    int c = 5 , d = 10;
+    c += d -= c;    //+= and -= are right to left associativity. So [c += (d -= c)] => c+= (d = 10 - 5)
+    //c += 5 => c = 5+5 = 10;   ans(c=10,d=5)
+    cout<<c<<" "<<d<<endl;
+
+    //QUESTION - Find the result of the following code 
+    int num_a = 2 , num_b = 3 , num_c ,num_d;
+    float float_a,float_b;
+    num_c = num_a/num_b*num_b;      //  num_c = 2/3*3 = 0*3 = 0
+    num_d = num_b/num_a*num_a;      //  num_d = 3/2*2 = 1*2 = 2
+    //though we are now using float , we can see that the operands are still int so the operations occur like int and finally the ans is only converted to float. 
+    float_a = num_a/num_b*num_b;    //  float_a = 2/3*3 = 0*3 = 0 => 0.0 or 0
+    float_b = num_b/num_a*num_a;    //  float_b = 3/2*2 = 1*2 = 2 => 2.0 or 2
+    cout<<num_c<<" "<<num_d<<" "<<float_a<<" "<<float_b<<endl;  //0 2 0 2
+
 
 
 
