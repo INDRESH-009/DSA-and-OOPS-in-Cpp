@@ -7,8 +7,7 @@
         6.nested if-else and else-if and questions.
         7.How conditional statements works , revision questions 
         8.Terenary operators
-        9.
-        10.
+        9.Switch statements
 */
 
 //======================================== LECTURE - 01 =========================================
@@ -352,20 +351,7 @@ int main(){
             break;
 
     }
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
     
 }
 
