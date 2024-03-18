@@ -130,18 +130,18 @@ int main(){
     }
 //======================================== LECTURE - 04 =========================================
 
-    //check if the number is prime or composite
-    // int num;
-    // cout<<"Enter a number : "<<endl;
-    // cin>>num;
-    // for(int i=2;i<=num-1;i++){
-    //     if(num%i==0){
-    //         cout<<"It is a composite number";
-    //         break;
-    //     }
-    // }
-    
-    // cout<<"It is a prime number"
+    //Check if a number is composite or not.
+    int num;
+    cout<<"Enter a number :";
+    cin>>num;
+    //for composite number it should have factor other than 1 and itself. So we take i from 2 to (num-1)
+    for(int i=2;i<=(num-1);i++){
+        if(num%i==0){
+            cout<<"The number is composite.";
+            //if a number has many factors then fr each factor the below statement prints. To avoid that we use break which says if the condition is satisfied atleast once th print as composite and break out of the loop.
+            break;
+        }
+    }
    
     
 
