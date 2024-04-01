@@ -339,22 +339,64 @@ int main(){
         cout<<i<<"! = "<<prod<<endl;
     }
 
-    //Print the nth fibonnaci number
+    //Print the fibonnaci series
     //It is a series where the 1st 2 numbers are 1 and the subsequent digits is equal to the sum of the precceding 2 numbers.
     int fibo,firstterm,secondterm,nextterm;
     cout<<"enter the nth term of the fibonacci series : ";
     cin>>fibo;
-    firstterm = 0;
+    firstterm = 1;
     secondterm = 1;
     cout<<firstterm<<" "<<secondterm<<" ";
-    for(int i=1;i<=fibo;i++){
-        firstterm = secondterm;
-        secondterm = i;
+    for(int i=3;i<=fibo;i++){   //i=3 becz the 1sr and 2nd term are already printed as 1,1
         nextterm = firstterm + secondterm;
+        firstterm = secondterm;
+        secondterm = nextterm;
         cout<<nextterm<<" ";
     }
-    
+    //Print the nth fibonnaci number
+    //to get the nth fibonacci number from the series , instead of printing the series completely we can allow it to run till it reaches nth term and finally print the term
+    int fibon,first__term,second__term,next_term;
+    cout<<"enter the nth term of the fibonacci series : ";
+    cin>>fibon;
+    first__term = 1;
+    second__term = 1;
+    for(int i=3;i<=fibon;i++){   //i=3 becz the 1sr and 2nd term are already printed as 1,1
+        next_term = first__term + second__term;
+        first__term = second__term;
+        second__term = next_term;
+    }
+    cout<<next_term<<" ";
 
+
+    //calculate f raised to power g where f and g are user inputs 
+    //base and power > 0 
+    //base <0 but power > 0
+    //power<0   => 2^-3 = 1/2^3.
+    float f,g,exponent;
+    exponent = 1;
+    cout<<"Enter the base : ";
+    cin>>f;
+    cout<<"Enter the exponent : ";
+    cin>>g;
+    bool g_negative = false;
+    if(g<0){
+        g_negative = true;
+        g  = -g;
+    }
+    for(int i=1;i<=g;i++){
+        exponent *= f;
+    }
+    float g_neg;
+    if(f==0 && g==0){
+        cout<<"not defined"<<endl;
+    }
+    if(g_negative){
+        g_neg = 1/exponent;
+        cout<<g_neg<<endl;
+    }
+    else{
+        cout<<exponent<<endl;
+    }
 
 
     
