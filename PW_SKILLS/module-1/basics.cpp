@@ -93,7 +93,7 @@ int main(){
     float newans = 10 / 3;
     cout<<newans<<endl;         //newans = 10/3 = 3.333 = 3 (reason - operands are integers so result is int)
 
-    //if any operand is int and the 2nd one is float the the result is float becz the int is promoter to float before the operation.
+    //if any operand is int and the 2nd one is float the the result is float becz the int is promoted to float before the operation.
     //It is common in many languages to promote an integer to a floating point before doing an operation with another floating point value. If it didn't work this way, there would be many accidental loss-of-precision (or loss-of-information) bugs  (Source : stack-overflow)
     
     newans = 10/3.0;
@@ -140,6 +140,23 @@ int main(){
     cout<<x--<<endl;
     //PRE DECREMENT - current value of x is 99. in pre decrement operator --x first the value of x is decresed by 1 and the value become 98 . then the current operation of printing x occurs.
     cout<<--x<<endl;
+
+    //But note that the difference between pre and post increment/decrement operator only exist when we are performing operations that invlolve these inside them . in these example below we see that pre or post doesnt matter when,when they are used outside an operation , unlike the above examples
+    int g = 10;
+    g++;
+    cout<<g<<endl;  //11
+
+    g = 10;
+    ++g;
+    cout<<g<<endl;  //11
+
+    g = 10;
+    g--;
+    cout<<g<<endl;  //9
+
+    g = 10;
+    --g;
+    cout<<g<<endl;  //9
 
 //Modulo operator
     /* creation of modulo operator */
