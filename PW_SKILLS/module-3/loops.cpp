@@ -397,10 +397,4 @@ int main(){
     else{
         cout<<exponent<<endl;
     }
-
-
-    
-
-    
-
 }
