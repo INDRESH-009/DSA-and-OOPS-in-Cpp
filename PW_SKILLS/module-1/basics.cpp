@@ -430,15 +430,4 @@ int main(){
     float_a = num_a/num_b*num_b;    //  float_a = 2/3*3 = 0*3 = 0 => 0.0 or 0
     float_b = num_b/num_a*num_a;    //  float_b = 3/2*2 = 1*2 = 2 => 2.0 or 2
     cout<<num_c<<" "<<num_d<<" "<<float_a<<" "<<float_b<<endl;  //0 2 0 2
-
-
-
-
-
-
-
-
-
-
-
 }
