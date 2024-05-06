@@ -22,3 +22,8 @@ int main(){ //main function
 
 //to make newline use \n viz the escape sequence or a endl manipulator - see line 5 to 8 
 //to create a blank line use 2 \n 
+
+
+
+
+
