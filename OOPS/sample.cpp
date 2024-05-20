@@ -40,9 +40,4 @@ int main(){
     Mouryacar.printdetails();
     Charancar.printdetails();
 
-
-    
-
-
-
 }

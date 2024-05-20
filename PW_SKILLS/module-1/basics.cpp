@@ -17,7 +17,7 @@
 using namespace std;
 int main(){
 
-//======================================== LECTURE - 01 =========================================
+//======================================== LECTURE - 01 =====================================
 //Output statements - use cout
     cout<<"hello";
     cout<<10;
@@ -294,7 +294,7 @@ int main(){
     x=3;
     cout<<(x==7)<<endl;   //x is 3 but equated to 7 viz false so output is 0
 
-//======================================== LECTURE - 09 ======================================    
+//======================================== LECTURE - 09 ==================================    
     //char datatype - helps to store any character (num - (0 to 9),symbol,letter(a-z,A-Z)) 
     char ch1 = 'a';
     char ch2 = 'A';

@@ -64,4 +64,18 @@ int main(){
     cout<<wealth<<endl;//print the value in wealth viz also changed into "Billionaire"
      
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

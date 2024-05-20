@@ -10,7 +10,7 @@
         9.Switch statements
 */
 
-//======================================== LECTURE - 01 =========================================
+//======================================== LECTURE - 01 ======================================
 
 #include <iostream>
 using namespace std;
@@ -38,7 +38,7 @@ int main(){
         cout<<"The number is not divisible by 5"<<endl;
     }
 
-//======================================== LECTURE - 02 =========================================
+//======================================== LECTURE - 02 ======================================
     //QUESTION - Given an integer print the absolute value of the integer
     //The absolute value of an integer is the numerical value of the integer without considering its sign. 
     int integer_value;
@@ -53,7 +53,7 @@ int main(){
     }
 
 
-//======================================== LECTURE - 03 =========================================
+//======================================== LECTURE - 03 ======================================
     //Take a 3 positive integer as input and check if it is a 3 digit number or not
     int a;
     cout<<"Enter a number to check if it is 3 digits or not : ";
@@ -65,7 +65,7 @@ int main(){
         cout<<"The number doesnt have 3 digits"<<endl;
     }
 
-//======================================== LECTURE - 04 =========================================
+//======================================== LECTURE - 04 ======================================
     //QUESTION - Take a positive number as input and check if it is divisible by 5 and 3
     int b;
     cout<<"Enter a number to check if it is divisible by 3 and 5 : ";
@@ -129,7 +129,7 @@ int main(){
         cout<<num3<<" is greatest"<<endl;
     }
 
-//======================================== LECTURE - 05 =========================================
+//======================================== LECTURE - 05 ======================================
     //write a program to check weather  character is a alphabet or not
     //Algo - get char as input . type-caste to int and u will get ascii value. If ascii value matches 65 to 90 or 97 to 112 , then it  is an alphabet
     char ch;
@@ -143,7 +143,7 @@ int main(){
         cout<<"the character is not an aphabet"<<endl;
     }
 
-//======================================== LECTURE - 06 =========================================
+//======================================== LECTURE - 06 ======================================
     //QUESTION - take positive integer as input and tell if it is divisible by 5 or 3 but not divisible by 15
     int num;
     cout<<"Enter a number: ";
